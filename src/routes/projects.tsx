@@ -3,8 +3,7 @@ import { useState } from "react";
 import { PageHero } from "@/components/site/PageHero";
 import { X } from "lucide-react";
 
-// Placeholder imports for your gallery images.
-// Adjust the path "@/" and directory names to match your exact asset structure.
+// Gallery Image Imports
 import p01 from "@/assets/gallery/p01.webp";
 import p02 from "@/assets/gallery/p02.webp";
 import p03 from "@/assets/gallery/p03.webp";
@@ -25,24 +24,65 @@ import p17 from "@/assets/gallery/p17.webp";
 import p18 from "@/assets/gallery/p18.webp";
 import p19 from "@/assets/gallery/p19.webp";
 import p20 from "@/assets/gallery/p20.webp";
-
-const galleryImages: string[] = [
-  p01, p02, p03, p04, p05, p06, p07, p08, p09, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20
-];
+import p21 from "@/assets/gallery/p21.webp";
+import p22 from "@/assets/gallery/p22.webp";
+import p23 from "@/assets/gallery/p23.webp";
+import p24 from "@/assets/gallery/p24.webp";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Build Gallery — Impian Bina" },
-      { name: "description", content: "A visual showcase of our completed construction projects." },
-      { property: "og:title", content: "Build Gallery — Impian Bina" },
-      { property: "og:description", content: "A visual showcase of our completed construction projects." },
-      { property: "og:url", content: "/gallery" },
+      { title: "Build Sequence — Impian Bina" },
+      { name: "description", content: "A step-by-step visual showcase of our construction execution from earthworks to handover." },
+      { property: "og:title", content: "Build Sequence — Impian Bina" },
+      { property: "og:description", content: "A step-by-step visual showcase of our construction execution from earthworks to handover." },
+      { property: "og:url", content: "/projects" },
     ],
-    links: [{ rel: "canonical", href: "/gallery" }],
+    links: [{ rel: "canonical", href: "/projects" }],
   }),
   component: GalleryPage,
 });
+
+// Structural definition for the construction timeline
+type BuildPhase = {
+  id: string;
+  title: string;
+  description: string;
+  images: string[];
+};
+
+const constructionPhases: BuildPhase[] = [
+  {
+    id: "phase-01",
+    title: "Phase 1: Earthworks & Site Preparation",
+    description: "Clearing the soil, site leveling, and establishing secure perimeter access.",
+    images: [p15, p18], // Swap these variables with your actual earthwork photos
+  },
+  {
+    id: "phase-02",
+    title: "Phase 2: Foundation & Substructure",
+    description: "Piling, laying the concrete base, footings, and structural groundwork.",
+    images: [p21, p15],
+  },
+  {
+    id: "phase-03",
+    title: "Phase 3: Superstructure & Framing",
+    description: "Erecting columns, beams, floor slabs, and core structural steel framing.",
+    images: [],
+  },
+  {
+    id: "phase-04",
+    title: "Phase 4: Exterior & Routing",
+    description: "Roofing installation, brickwork, and initial mechanical/electrical routing.",
+    images: [p20, p23, p24],
+  },
+  {
+    id: "phase-05",
+    title: "Phase 5: Finishes & Handover",
+    description: "Final architectural finishes, painting, flooring, and completed exterior.",
+    images: [p02, p04, p06, p07],
+  }
+];
 
 function GalleryPage() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
@@ -50,35 +90,49 @@ function GalleryPage() {
   return (
     <>
       <PageHero
-        eyebrow="Our Work"
-        title="Build Gallery."
-        intro="A visual showcase of our completed construction projects and on-site execution."
+        eyebrow="Our Execution"
+        title="The Build Sequence."
+        intro="We do not skip steps. Review our standard operational progression from raw earth to final structural handover."
       />
 
-      {/* Grid Section */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-px bg-foreground/10 border border-foreground/10">
-            {galleryImages.map((src, idx) => (
-              <button
-                key={idx}
-                type="button"
-                onClick={() => setActiveImage(src)}
-                className="group relative aspect-square w-full overflow-hidden bg-muted"
-                aria-label={`View gallery image ${idx + 1}`}
-              >
-                <img
-                  src={src}
-                  alt={`Construction progress or completion ${idx + 1}`}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10" />
-              </button>
-            ))}
-          </div>
+      <div className="py-16 md:py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-6 space-y-24">
+          {constructionPhases.map((phase) => (
+            <section key={phase.id} className="scroll-mt-24">
+              {/* Phase Header */}
+              <div className="mb-8 md:mb-12 max-w-2xl">
+                <h2 className="text-2xl md:text-3xl font-black tracking-tighter uppercase mb-3 text-foreground">
+                  {phase.title}
+                </h2>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {phase.description}
+                </p>
+              </div>
+
+              {/* Phase Image Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-foreground/10 border border-foreground/10">
+                {phase.images.map((src, idx) => (
+                  <button
+                    key={`${phase.id}-img-${idx}`}
+                    type="button"
+                    onClick={() => setActiveImage(src)}
+                    className="group relative aspect-square w-full overflow-hidden bg-muted"
+                    aria-label={`View ${phase.title} image ${idx + 1}`}
+                  >
+                    <img
+                      src={src}
+                      alt={`${phase.title} - Progress shot ${idx + 1}`}
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/20" />
+                  </button>
+                ))}
+              </div>
+            </section>
+          ))}
         </div>
-      </section>
+      </div>
 
       {/* Fullscreen Lightbox Modal */}
       {activeImage && (
@@ -86,7 +140,7 @@ function GalleryPage() {
           role="dialog"
           aria-modal="true"
           aria-label="Fullscreen image view"
-          className="fixed inset-0 z-[60] bg-black/95 flex items-center justify-center p-4 md:p-8 backdrop-blur-sm"
+          className="fixed inset-0 z-[60] bg-black/95 flex items-center justify-center p-4 md:p-8 backdrop-blur-sm animate-in fade-in duration-200"
           onClick={() => setActiveImage(null)}
         >
           <button
@@ -99,13 +153,13 @@ function GalleryPage() {
           </button>
           
           <div 
-            className="relative max-w-6xl w-full max-h-[90vh] flex items-center justify-center"
+            className="relative max-w-6xl w-full max-h-[90vh] flex items-center justify-center animate-in zoom-in-95 duration-300"
             onClick={(e) => e.stopPropagation()}
           >
             <img 
               src={activeImage} 
-              alt="Fullscreen view" 
-              className="max-w-full max-h-[90vh] object-contain" 
+              alt="Detailed construction view" 
+              className="max-w-full max-h-[90vh] object-contain shadow-2xl" 
             />
           </div>
         </div>

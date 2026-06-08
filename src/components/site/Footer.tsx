@@ -23,7 +23,7 @@ export function Footer() {
             <p className="mono text-[10px] text-white/30 uppercase tracking-widest mb-4">{t("footer.contact")}</p>
             <ul className="space-y-3">
               <li><a className="text-sm font-semibold hover:text-primary transition-colors" href="tel:+6067600000">+60 6-760 0000</a></li>
-              <li><a className="text-sm font-semibold hover:text-primary transition-colors" href="https://wa.me/60193706316" target="_blank" rel="noreferrer">WhatsApp +60 19-370 6316</a></li>
+              <li><a className="text-sm font-semibold hover:text-primary transition-colors" href="https://wa.me/60176427285" target="_blank" rel="noreferrer">WhatsApp +60 19-370 6316</a></li>
               <li><a className="text-sm font-semibold hover:text-primary break-all transition-colors" href="mailto:officialimpianbina@gmail.com">officialimpianbina@gmail.com</a></li>
             </ul>
           </div>

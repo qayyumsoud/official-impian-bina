@@ -117,7 +117,7 @@ function PortfolioPage() {
               <Download className="size-4" /> Download PDF
             </a>
             <a
-              href={`https://wa.me/60193706316?text=${waMessage}`}
+              href={`https://wa.me/60176427285?text=${waMessage}`}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 text-xs font-bold uppercase tracking-widest hover:bg-accent transition-colors"
@@ -175,7 +175,7 @@ function PortfolioPage() {
           </h2>
           <div className="mt-10 flex flex-wrap gap-3 justify-center">
             <a
-              href={`https://wa.me/60193706316?text=${waMessage}`}
+              href={`https://wa.me/60176427285?text=${waMessage}`}
               target="_blank"
               rel="noreferrer"
               className="bg-primary text-primary-foreground px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-background hover:text-foreground transition-colors"
@@ -228,7 +228,7 @@ function PortfolioPage() {
             </div>
             <div className="p-5 flex flex-wrap gap-3 justify-end border-t border-foreground/10">
               <a
-                href={`https://wa.me/60193706316?text=${encodeURIComponent(
+                href={`https://wa.me/60176427285?text=${encodeURIComponent(
                   `Hi Impian Bina, I'm interested in Design ${active.code} (${active.sqft} sq ft, ${active.rooms}). Could I get a quotation?`,
                 )}`}
                 target="_blank"

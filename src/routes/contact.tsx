@@ -4,7 +4,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { toast } from "sonner";
 import { MessageCircle } from "lucide-react";
 
-const WA_NUMBER = "60193706316";
+const WA_NUMBER = "60176427285";
 const WA_TEMPLATE = `Hi Impian Bina,
 
 Saya ingin mendapatkan sebutan harga untuk projek berikut:
@@ -79,7 +79,7 @@ function ContactPage() {
             </div>
             <div>
               <p className="mono text-[10px] uppercase tracking-widest text-primary mb-2">WhatsApp</p>
-              <a href="https://wa.me/60193706316" target="_blank" rel="noreferrer" className="block text-2xl font-black tracking-tighter hover:text-primary">+60 19-370 6316</a>
+              <a href="https://wa.me/60176427285" target="_blank" rel="noreferrer" className="block text-2xl font-black tracking-tighter hover:text-primary">+60 17-642 7285</a>
               <p className="text-xs text-muted-foreground mt-1">Quickest response — site photos welcome</p>
             </div>
             <div>
@@ -107,7 +107,8 @@ function ContactPage() {
               const formData = new FormData(e.target as HTMLFormElement);
               
               // 2. Append your access key (replace with your actual key)
-              formData.append("access_key", "161d131d-b26d-426b-8efe-79b45dfdcf92");
+              // formData.append("access_key", "161d131d-b26d-426b-8efe-79b45dfdcf92");
+              formData.append("access_key", "f5ee752d-52ee-4e54-b6bf-cc3b7f2ff93a");
               
               // Optional: Add a custom subject line
               formData.append("subject", "New Quotation Request from Impian Bina Website");
