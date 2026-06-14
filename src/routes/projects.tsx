@@ -29,6 +29,8 @@ import p21 from "@/assets/gallery/p21.webp";
 import p22 from "@/assets/gallery/p22.webp";
 import p23 from "@/assets/gallery/p23.webp";
 import p24 from "@/assets/gallery/p24.webp";
+import p25 from "@/assets/gallery/p25.webp";
+import p26 from "@/assets/gallery/p26.webp";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
@@ -57,7 +59,7 @@ const constructionPhases: BuildPhase[] = [
     id: "phase-01",
     titleKey: "proj.phase.1.title",
     descKey: "proj.phase.1.desc",
-    images: [p15, p18],
+    images: [p18],
   },
   {
     id: "phase-02",
@@ -75,7 +77,7 @@ const constructionPhases: BuildPhase[] = [
     id: "phase-04",
     titleKey: "proj.phase.4.title",
     descKey: "proj.phase.4.desc",
-    images: [p20, p23, p24],
+    images: [p20, p24, p26, p25],
   },
   {
     id: "phase-05",
@@ -142,7 +144,7 @@ function GalleryPage() {
           role="dialog"
           aria-modal="true"
           aria-label="Fullscreen image view"
-          className="fixed inset-0 z-[60] bg-black/95 flex items-center justify-center p-4 md:p-8 backdrop-blur-sm animate-in fade-in duration-200"
+          className="fixed inset-0 z-60 bg-black/95 flex items-center justify-center p-4 md:p-8 backdrop-blur-sm animate-in fade-in duration-200"
           onClick={() => setActiveImage(null)}
         >
           <button

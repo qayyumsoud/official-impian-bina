@@ -29,7 +29,7 @@ const dictionaries: Record<Lang, Dict> = {
     "footer.explore": "Explore",
     "footer.rights": "All rights reserved.",
 
-    "home.eyebrow": "Established 2000 · Negeri Sembilan & Melaka",
+    "home.eyebrow": "Established since 2000 · Negeri Sembilan & Melaka",
     "home.h1.a": "Building the",
     "home.h1.b": "Future",
     "home.h1.c": "with Local Precision.",
@@ -364,7 +364,7 @@ const dictionaries: Record<Lang, Dict> = {
     "footer.explore": "Terokai",
     "footer.rights": "Hak cipta terpelihara.",
 
-    "home.eyebrow": "Ditubuhkan 2000 · Negeri Sembilan & Melaka",
+    "home.eyebrow": "Ditubuhkan pada tahun 2000 · Negeri Sembilan & Melaka",
     "home.h1.a": "Membina",
     "home.h1.b": "Masa Depan",
     "home.h1.c": "dengan Ketelitian Tempatan.",
