@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.webp";
@@ -19,13 +19,23 @@ const navItems = [
 export function Header() {
   const [open, setOpen] = useState(false);
   const { lang, setLang, t } = useLang();
+  
+  // 1. Initialize the router location hook
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   const toggleLang = () => setLang(lang === "en" ? "ms" : "en");
 
   return (
     <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-foreground/5">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center" aria-label="Impian Bina home">
-          <img src={logo} alt="Impian Bina — Building Dream" className="h-12 w-auto" width={120} height={48} />
+          {/* 2. Apply conditional styling and remove hardcoded width/height */}
+          <img 
+            src={logo} 
+            alt="Impian Bina — Building Dream" 
+            className={`w-auto transition-all duration-300 ease-in-out ${isHome ? "h-16" : "h-12"}`} 
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-7 text-[12px] font-semibold uppercase tracking-wider" aria-label="Primary">

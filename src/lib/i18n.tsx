@@ -348,7 +348,7 @@ const dictionaries: Record<Lang, Dict> = {
     "nav.portfolio": "Portfolio",
     "nav.videos": "Video",
     "nav.process": "Proses",
-    "nav.coverage": "Liputan",
+    "nav.coverage": "Kawasan Liputan",
     "nav.faq": "Soalan Lazim",
     "cta.getQuotation": "Sebutan Harga",
     "cta.contactUs": "Hubungi Kami",
@@ -376,15 +376,15 @@ const dictionaries: Record<Lang, Dict> = {
     "home.featured.viewAll": "Lihat semua →",
     "home.coverage.eyebrow": "Kawasan Liputan",
     "home.coverage.title": "Negeri Sembilan\n& Melaka.",
-    "home.coverage.body": "Ibu pejabat di Seremban dengan pejabat serantau di Bandaraya Melaka. Projek di luar negeri ini memerlukan nilai kontrak minimum RM250,000.",
+    "home.coverage.body": "Ibu pejabat di Seremban dengan pejabat cawangan di Bandaraya Melaka. Projek di luar negeri ini memerlukan nilai kontrak minimum RM250,000.",
     "home.coverage.link": "Maklumat liputan →",
     "home.coverage.minProject": "Projek Minimum",
     "home.coverage.minNote": "Untuk projek di luar NS & Melaka",
     "home.cta.eyebrow": "Sedia untuk membina?",
-    "home.cta.title": "Mari kita tuangkan asas projek anda yang seterusnya.",
+    "home.cta.title": "Mari bina asas kukuh untuk projek anda yang seterusnya..",
 
     "home.svc.res.name": "Kediaman",
-    "home.svc.res.blurb": "Banglo binaan tersuai dan perumahan moden yang disesuaikan untuk gaya hidup rakyat Malaysia.",
+    "home.svc.res.blurb": "Banglo rekaan khas dan kediaman moden yang bersesuaian dengan cara hidup rakyat Malaysia.",
     "home.svc.com.name": "Komersial",
     "home.svc.com.blurb": "Lot kedai, pejabat, dan binaan runcit yang direka untuk pulangan penyewa.",
     "home.svc.inf.name": "Infrastruktur",
@@ -427,7 +427,7 @@ const dictionaries: Record<Lang, Dict> = {
 
     "services.hero.eyebrow": "Perkhidmatan — Lima Disiplin",
     "services.hero.title": "Dari tuangan asas hingga perasmian.",
-    "services.hero.intro": "Kami berlesen dan dilengkapi untuk spektrum penuh — rumah persendirian hingga infrastruktur negeri. Setiap barisan perkhidmatan diketuai oleh pengurus projek berdedikasi dengan sekurang-kurangnya 10 tahun pengalaman di tapak binaan Malaysia.",
+    "services.hero.intro": "Kami berlesen dan berkelengkapan penuh untuk mengendalikan pelbagai skop projek — daripada kediaman peribadi hinggalah ke infrastruktur kerajaan. Setiap bidang perkhidmatan diterajui oleh pengurus projek berdedikasi dengan pengalaman sekurang-kurangnya 20 tahun di tapak binaan Malaysia.",
     "services.label": "Perkhidmatan",
     "services.cta": "Bincang perkhidmatan ini",
     
@@ -551,7 +551,7 @@ const dictionaries: Record<Lang, Dict> = {
     "proc.hero.intro": "Dari e-mel pertama hingga penyerahan kunci akhir, setiap peringkat didokumentasikan, bertarikh, dan ditandatangani. Berikut adalah apa yang anda boleh jangkakan.",
 
     "proc.step.1.title": "Konsultasi",
-    "proc.step.1.body": "Taklimat 60 minit percuma untuk menentukan skop projek, julat bajet, dan garis masa anda. Diadakan di pejabat kami di Seremban, melalui Zoom, atau di tapak.",
+    "proc.step.1.body": "Taklimat 60 minit percuma untuk menentukan skop projek, anggaran bajet, dan garis masa anda. Diadakan di pejabat kami di Seremban, melalui Zoom, atau di tapak.",
     "proc.step.2.title": "Lawatan Tapak",
     "proc.step.2.body": "Pengurus projek dan jurutera struktur kami meninjau tanah, mengambil ukuran, dan mengenal pasti sebarang kekangan tanah, akses, atau majlis perbandaran.",
     "proc.step.3.title": "Sebut Harga",
@@ -669,8 +669,8 @@ const dictionaries: Record<Lang, Dict> = {
     "contact.type.oth": "Lain-lain",
 
     "cert.cidb": "CIDB MALAYSIA",
-    "cert.ssm": "DAFTAR SSM",
-    "cert.spkk": "DAFTAR SPKK",
+    "cert.ssm": "BERDAFTAR SSM",
+    "cert.spkk": "BERDAFTAR SPKK",
     "cert.stb": "PENSIJILAN STB",
   },
 };
