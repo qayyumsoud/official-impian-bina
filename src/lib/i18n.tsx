@@ -337,6 +337,32 @@ const dictionaries: Record<Lang, Dict> = {
     "cert.ssm": "SSM REGISTERED",
     "cert.spkk": "SPKK REGISTERED",
     "cert.stb": "STB CERTIFIED",
+
+    "proj.sequence.title": "Construction Execution",
+    "proj.sequence.desc": "A step-by-step visual showcase of our engineering process from raw earthworks to final handover.",
+    
+    "proj.portfolio.eyebrow": "Gallery",
+    "proj.portfolio.title": "Past Projects",
+    
+    "proj.completed.1.title": "Modern Custom Bungalow",
+    "proj.completed.1.cat": "Residential",
+    "proj.completed.2.title": "Commercial Office Lot",
+    "proj.completed.2.cat": "Commercial",
+    "proj.completed.3.title": "Civic Infrastructure",
+    "proj.completed.3.cat": "Government",
+    "proj.completed.4.title": "Industrial Warehouse",
+    "proj.completed.4.cat": "Industrial",
+    "proj.completed.5.title": "Mixed-Use Development",
+    "proj.completed.5.cat": "Mixed-Use",
+    "proj.completed.6.title": "Luxury Condominium",
+    "proj.completed.6.cat": "Residential",
+
+    "proj.status.pending": "Images pending compilation",
+    "proj.modal.view": "View image",
+    "proj.modal.progress": "Progress shot",
+    "proj.modal.fullscreen": "Fullscreen image view",
+    "proj.modal.close": "Close fullscreen",
+    "proj.modal.detail": "Detailed construction view",
   },
 
 
@@ -672,6 +698,32 @@ const dictionaries: Record<Lang, Dict> = {
     "cert.ssm": "BERDAFTAR SSM",
     "cert.spkk": "BERDAFTAR SPKK",
     "cert.stb": "PENSIJILAN STB",
+
+    "proj.sequence.title": "Pelaksanaan Pembinaan",
+    "proj.sequence.desc": "Pameran visual langkah demi langkah proses kejuruteraan kami dari kerja tanah mentah hingga penyerahan akhir.",
+    
+    "proj.portfolio.eyebrow": "Galeri",
+    "proj.portfolio.title": "Projek Terdahulu",
+    
+    "proj.completed.1.title": "Banglo Tersuai Moden",
+    "proj.completed.1.cat": "Kediaman",
+    "proj.completed.2.title": "Lot Pejabat Komersial",
+    "proj.completed.2.cat": "Komersial",
+    "proj.completed.3.title": "Infrastruktur Awam",
+    "proj.completed.3.cat": "Kerajaan",
+    "proj.completed.4.title": "Gudang Industri",
+    "proj.completed.4.cat": "Industri",
+    "proj.completed.5.title": "Pembangunan Bercampur",
+    "proj.completed.5.cat": "Bercampur",
+    "proj.completed.6.title": "Kondominium Mewah",
+    "proj.completed.6.cat": "Kediaman",
+
+    "proj.status.pending": "Gambar sedang dikompilasi",
+    "proj.modal.view": "Lihat gambar",
+    "proj.modal.progress": "Gambar kemajuan",
+    "proj.modal.fullscreen": "Paparan gambar skrin penuh",
+    "proj.modal.close": "Tutup skrin penuh",
+    "proj.modal.detail": "Pandangan terperinci pembinaan",
   },
 };
 
