@@ -21,11 +21,6 @@ export function Footer() {
 
   return (
     <footer className="relative bg-[#111111] text-white/70 overflow-hidden pt-20">
-      {/* 
-        Optional: To add the blueprint building wireframe in the bottom left, 
-        insert an absolute <img> tag here with opacity-10 and pointer-events-none. 
-      */}
-
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         
         {/* Top Section: 4-Column Grid */}
@@ -34,8 +29,7 @@ export function Footer() {
           {/* Column 1: Brand & Address */}
           <div className="flex flex-col">
             <Link to="/" className="inline-block mb-6" aria-label="Impian Bina home">
-              {/* Removed bg-white padding to match the dark-mode integration in the design */}
-              <img src={logo} alt="Impian Bina — Building Dream" className="h-16 w-auto" width={200} height={64} />
+              <img src={logo} alt="Impian Bina" className="h-16 w-auto" width={200} height={64} />
             </Link>
             <p className="text-sm leading-relaxed mb-6">
               {t("footer.tagline")}
@@ -85,21 +79,21 @@ export function Footer() {
 
             {/* Working Hours */}
             <div>
-              <p className="text-xs font-bold text-white uppercase tracking-widest mb-6">Working Hours</p>
+              <p className="text-xs font-bold text-white uppercase tracking-widest mb-6">{t("footer.hours.title")}</p>
               <div className="flex items-start gap-4">
                 <div className="p-2 rounded-full border border-white/10">
                   <Clock className="size-4 text-primary" />
                 </div>
                 <div className="text-sm space-y-1 mt-1">
-                  <p>Mon &ndash; Sat: 8:00 AM &ndash; 5:00 PM</p>
-                  <p className="text-xs text-white/40">(Closed on Sundays & Public Holidays)</p>
+                  <p>{t("footer.hours.time")}</p>
+                  <p className="text-xs text-white/40">{t("footer.hours.closed")}</p>
                 </div>
               </div>
             </div>
 
             {/* Socials */}
             <div>
-              <p className="text-xs font-bold text-white uppercase tracking-widest mb-6">Follow Us</p>
+              <p className="text-xs font-bold text-white uppercase tracking-widest mb-6">{t("footer.social.title")}</p>
               <ul className="flex gap-3">
                 <li>
                   <a 
@@ -107,7 +101,7 @@ export function Footer() {
                     href="https://www.facebook.com/officialimpianbina" 
                     target="_blank" 
                     rel="noreferrer"
-                    aria-label="Follow us on Facebook"
+                    aria-label="Facebook"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-4">
                       <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
@@ -120,7 +114,7 @@ export function Footer() {
                     href="https://www.instagram.com/officialimpianbina?igsh=azdvd244ZjkxZTV3" 
                     target="_blank" 
                     rel="noreferrer"
-                    aria-label="Follow us on Instagram"
+                    aria-label="Instagram"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-4">
                       <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
@@ -135,7 +129,7 @@ export function Footer() {
                     href="https://www.tiktok.com/@officialimpianbina?_r=1&_t=ZS-96dc7oDoKSy" 
                     target="_blank" 
                     rel="noreferrer"
-                    aria-label="Follow us on TikTok"
+                    aria-label="TikTok"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-4">
                       <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
@@ -178,11 +172,11 @@ export function Footer() {
             <div className="bg-[#1A1A1A] border border-white/5 rounded-2xl p-8 flex flex-col items-center text-center shadow-2xl">
               <HardHat className="size-12 text-primary mb-6" strokeWidth={1.5} />
               <h3 className="text-xl font-bold text-white leading-tight mb-4">
-                Let's Build<br />Something Great
+                {t("footer.card.title1")}<br />{t("footer.card.title2")}
               </h3>
               <hr className="w-8 border-primary border-t-2 mb-5" />
               <p className="text-sm text-white/60 mb-8 leading-relaxed">
-                Have a project in mind? We're ready to bring it to life with quality and integrity.
+                {t("footer.card.desc")}
               </p>
               <Link 
                 to="/contact" 
@@ -201,29 +195,29 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <ShieldCheck className="size-8 text-primary shrink-0" strokeWidth={1.5} />
             <div>
-              <p className="font-bold text-white text-sm">CIDB Licensed</p>
-              <p className="text-xs text-white/50">Grade G1</p>
+              <p className="font-bold text-white text-sm">{t("footer.bar.cidb.title")}</p>
+              <p className="text-xs text-white/50">{t("footer.bar.cidb.desc")}</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <FileText className="size-8 text-primary shrink-0" strokeWidth={1.5} />
             <div>
-              <p className="font-bold text-white text-sm">SSM Registered</p>
+              <p className="font-bold text-white text-sm">{t("footer.bar.ssm.title")}</p>
               <p className="text-xs text-white/50">1020000-X</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <Users className="size-8 text-primary shrink-0" strokeWidth={1.5} />
             <div>
-              <p className="font-bold text-white text-sm">Trusted Team</p>
-              <p className="text-xs text-white/50">Experienced & Skilled</p>
+              <p className="font-bold text-white text-sm">{t("footer.bar.team.title")}</p>
+              <p className="text-xs text-white/50">{t("footer.bar.team.desc")}</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <Award className="size-8 text-primary shrink-0" strokeWidth={1.5} />
             <div>
-              <p className="font-bold text-white text-sm">Quality Commitment</p>
-              <p className="text-xs text-white/50">Safety • Integrity • Excellence</p>
+              <p className="font-bold text-white text-sm">{t("footer.bar.quality.title")}</p>
+              <p className="text-xs text-white/50">{t("footer.bar.quality.desc")}</p>
             </div>
           </div>
         </div>
@@ -231,7 +225,9 @@ export function Footer() {
         {/* Bottom Section: Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 py-8 text-xs text-white/40">
           <p>&copy; {new Date().getFullYear()} Impian Bina Sdn Bhd. {t("footer.rights")}</p>
-          <p className="mono tracking-widest">CIDB &middot; SSM Registered &middot; SPKK &middot; STB</p>
+          <p className="mono tracking-widest uppercase">
+            {t("cert.cidb")} &middot; {t("cert.ssm")} &middot; {t("cert.spkk")} &middot; {t("cert.stb")}
+          </p>
         </div>
 
       </div>

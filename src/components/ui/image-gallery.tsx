@@ -58,15 +58,6 @@ function AnimatedProjectCard({ item }: { item: ProjectGalleryItem }) {
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
         />
-        {/* Brutalist Data Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="mono text-[10px] uppercase tracking-widest text-primary mb-1">
-            {item.category}
-          </p>
-          <h3 className="text-xl font-bold uppercase tracking-tight text-white leading-tight">
-            {item.title}
-          </h3>
-        </div>
       </AspectRatio>
     </div>
   );

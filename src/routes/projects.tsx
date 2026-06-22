@@ -33,6 +33,25 @@ import p23 from "@/assets/gallery/p23.webp";
 import p24 from "@/assets/gallery/p24.webp";
 import p25 from "@/assets/gallery/p25.webp";
 import p26 from "@/assets/gallery/p26.webp";
+import p27 from "@/assets/gallery/p27.webp";
+import p28 from "@/assets/gallery/p28.webp";
+import p29 from "@/assets/gallery/p29.webp";
+import p30 from "@/assets/gallery/p30.webp";
+import p31 from "@/assets/gallery/p31.webp";
+import p32 from "@/assets/gallery/p32.webp";
+import p33 from "@/assets/gallery/p33.webp";
+import p34 from "@/assets/gallery/p34.webp";
+import p35 from "@/assets/gallery/p35.webp";
+import p36 from "@/assets/gallery/p36.webp";
+import p37 from "@/assets/gallery/p37.webp";
+import p38 from "@/assets/gallery/p38.webp";
+import p39 from "@/assets/gallery/p39.webp";
+import p40 from "@/assets/gallery/p40.webp";
+import p41 from "@/assets/gallery/p41.webp";
+import p42 from "@/assets/gallery/p42.webp";
+import p43 from "@/assets/gallery/p43.webp";
+import p44 from "@/assets/gallery/p44.webp";
+
 
 // Homepage feature project imports (Reusing assets for the masonry grid)
 import g1 from "@/assets/gallery2/g1.webp";
@@ -41,6 +60,13 @@ import g3 from "@/assets/gallery2/g3.webp";
 import g4 from "@/assets/gallery2/g4.webp";
 import g5 from "@/assets/gallery2/g5.webp";
 import g6 from "@/assets/gallery2/g6.webp";
+import g7 from "@/assets/gallery2/g7.webp";
+import g8 from "@/assets/gallery2/g8.webp";
+import g9 from "@/assets/gallery2/g9.webp";
+import g10 from "@/assets/gallery2/g10.webp";
+import g11 from "@/assets/gallery2/g11.webp";
+import g12 from "@/assets/gallery2/g12.webp";
+
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
@@ -65,11 +91,10 @@ type BuildPhase = {
 };
 
 const constructionPhases: BuildPhase[] = [
-  { id: "phase-01", titleKey: "proj.phase.1.title", descKey: "proj.phase.1.desc", images: [p18] },
-  { id: "phase-02", titleKey: "proj.phase.2.title", descKey: "proj.phase.2.desc", images: [p21, p15] },
-  { id: "phase-03", titleKey: "proj.phase.3.title", descKey: "proj.phase.3.desc", images: [] },
-  { id: "phase-04", titleKey: "proj.phase.4.title", descKey: "proj.phase.4.desc", images: [p20, p24, p26, p25] },
-  { id: "phase-05", titleKey: "proj.phase.5.title", descKey: "proj.phase.5.desc", images: [p02, p04, p06, p07] }
+  { id: "phase-01", titleKey: "proj.phase.1.title", descKey: "proj.phase.1.desc", images: [p18, p21, p15, p30] },
+  { id: "phase-02", titleKey: "proj.phase.2.title", descKey: "proj.phase.2.desc", images: [p29, p34, p31, p35] },
+  { id: "phase-03", titleKey: "proj.phase.3.title", descKey: "proj.phase.3.desc", images: [p20, p24, p32, p27] },
+  { id: "phase-04", titleKey: "proj.phase.4.title", descKey: "proj.phase.4.desc", images: [p37, p42, p43, p44] }
 ];
 
 function GalleryPage() {
@@ -84,6 +109,12 @@ function GalleryPage() {
     { id: "cp-4", src: g4, alt: t("proj.completed.4.cat"), ratio: 9 / 16, title: t("proj.completed.4.title"), category: t("proj.completed.4.cat") },
     { id: "cp-5", src: g5, alt: t("proj.completed.5.cat"), ratio: 16 / 9, title: t("proj.completed.5.title"), category: t("proj.completed.5.cat") },
     { id: "cp-6", src: g6, alt: t("proj.completed.6.cat"), ratio: 4 / 3, title: t("proj.completed.6.title"), category: t("proj.completed.6.cat") },
+    { id: "cp-7", src: g7, alt: t("proj.completed.7.cat"), ratio: 16 / 9, title: t("proj.completed.7.title"), category: t("proj.completed.7.cat") },
+    { id: "cp-8", src: g8, alt: t("proj.completed.8.cat"), ratio: 4 / 3, title: t("proj.completed.8.title"), category: t("proj.completed.8.cat") },
+    { id: "cp-9", src: g9, alt: t("proj.completed.9.cat"), ratio: 1, title: t("proj.completed.9.title"), category: t("proj.completed.9.cat") },
+    { id: "cp-10", src: g10, alt: t("proj.completed.10.cat"), ratio: 9 / 16, title: t("proj.completed.10.title"), category: t("proj.completed.10.cat") },
+    { id: "cp-11", src: g11, alt: t("proj.completed.11.cat"), ratio: 16 / 9, title: t("proj.completed.11.title"), category: t("proj.completed.11.cat") },
+    { id: "cp-12", src: g12, alt: t("proj.completed.12.cat"), ratio: 4 / 3, title: t("proj.completed.12.title"), category: t("proj.completed.12.cat") },
   ];
 
   return (
